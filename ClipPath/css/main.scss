@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap");
+
+body {
+  background: #1b404f;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+}
+
+.inner {
+  background: rgb(7, 218, 165);
+  padding: 1em;
+  border-radius: 10px;
+  width: 250px;
+  clip-path: circle(10% at 90% 20%);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+
+  span {
+    float: right;
+    color: white;
+    font-weight: bold;
+    transition: color 0.5s;
+    position: relative;
+    margin-right: 4%;
+  }
+
+  h1 {
+    color: white;
+    margin: 0;
+  }
+
+  p {
+    color: white;
+    font-size: 0.8rem;
+  }
+
+  &:hover {
+    clip-path: circle(75%);
+    background: #00b6ff;
+
+    span {
+      color: rgba(255, 255, 255, 0);
+    }
+  }
+}
+
+.container2 {
+  margin-top: 50px;
+  width: 30%;
+  background: white;
+  border-radius: 10px;
+
+  .inner2 {
+    background: rgb(7, 218, 165);
+    padding: 1em;
+    border-radius: 10px;
+    width: calc(100% - 2em);
+    clip-path: inset(0% 0% 0% 100%);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+
+    h1 {
+      color: white;
+      margin: 0;
+    }
+
+    p {
+      color: white;
+      font-size: 0.8rem;
+    }
+  }
+  &:hover .inner2 {
+    clip-path: inset(0% 0% 0% 0%);
+  }
+}

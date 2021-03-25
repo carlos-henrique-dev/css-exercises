@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap");
+body {
+  background: #1b404f;
+  margin: 0;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Roboto", sans-serif;
+}
+
+.inner {
+  background: #07daa5;
+  padding: 1em;
+  border-radius: 10px;
+  width: 250px;
+  -webkit-clip-path: circle(10% at 90% 20%);
+          clip-path: circle(10% at 90% 20%);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.inner span {
+  float: right;
+  color: white;
+  font-weight: bold;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+  position: relative;
+  margin-right: 4%;
+}
+
+.inner h1 {
+  color: white;
+  margin: 0;
+}
+
+.inner p {
+  color: white;
+  font-size: 0.8rem;
+}
+
+.inner:hover {
+  -webkit-clip-path: circle(75%);
+          clip-path: circle(75%);
+  background: #00b6ff;
+}
+
+.inner:hover span {
+  color: rgba(255, 255, 255, 0);
+}
+
+.container2 {
+  margin-top: 50px;
+  width: 30%;
+  background: white;
+  border-radius: 10px;
+}
+
+.container2 .inner2 {
+  background: #07daa5;
+  padding: 1em;
+  border-radius: 10px;
+  width: calc(100% - 2em);
+  -webkit-clip-path: inset(0% 0% 0% 100%);
+          clip-path: inset(0% 0% 0% 100%);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.container2 .inner2 h1 {
+  color: white;
+  margin: 0;
+}
+
+.container2 .inner2 p {
+  color: white;
+  font-size: 0.8rem;
+}
+
+.container2:hover .inner2 {
+  -webkit-clip-path: inset(0% 0% 0% 0%);
+          clip-path: inset(0% 0% 0% 0%);
+}
+/*# sourceMappingURL=main.css.map */
